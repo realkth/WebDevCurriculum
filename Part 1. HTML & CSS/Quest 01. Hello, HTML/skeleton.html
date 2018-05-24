@@ -1,26 +1,147 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<!-- TODO: 또 무엇이 필요할까요? -->
-	</head>
-	<body>
-		<header>
-			<!-- TODO: 상단의 회색 부분은 어떻게 처리하면 좋을까요? -->
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>GitHub-Repository</title>
+</head>
+
+<body>
+	<header>
+		<nav class="navbar">
+			<div class="logo"></div>
+			<button class="repo-selection">This Repository</button>
+			<input type="text" class="search" placeholder="Search">
+			<ul class="quick-link">
+				<li class="pull-requests">Pull requests</li>
+				<li class="issues">Issues</li>
+				<li class="markerplace">Marketplace</li>
+				<li class="explore">Explore</li>
+			</ul>
+			<button class="noti"></button>
+			<div class="more">+</div>
+			<select class="my-account">
+				<option value="account">account</option>
+				<option value="sign-out">sign out</option>
+			</select>
+		</nav>
+	</header>
+
+	<section class="main">
+		<header class="main-header">
+			<h2 class="repo-title">
+				<a href="" class="user-name">KnowRe</a>
+				<span>/</span>
+				<a href="" class="repo-name">WebDevCurriculum</a>
+			</h2>
+			<div class="watching">
+				<button class="is-watch">Unwatch</button>
+				19
+			</div>
+			<div class="star">
+				<button class="is-star">Star</button>
+				113
+			</div>
+			<div class="fork">
+				<button class="is-fork">Fork</button>
+				106
+			</div>
+			<ul class="repo-link">
+				<li class="code">Code</li>
+				<li class="repo-issues">Issues
+					<span class="count-issues">0</span>
+				</li>
+				<li class="repo-pull-requests">Pull requests
+					<span class="pull-requests-count">1</span>
+				</li>
+				<li class="repo-projects">Projects
+					<span class="projects-count">1</span>
+				</li>
+				<li class="repo-insights">Insights
+					<span class="insights-count">1</span>
+				</li>
+			</ul>
 		</header>
 
-		<section class="main">
-			<header class="main-header">
-				<!-- TODO: 메인의 헤더 부분 -->
-			</header>
-
-			<section class="main-detail">
-				<!-- TODO: 메인의 부분 -->
-			</section>
+		<section class="main-detail">
+			<h4 class="repo-summary">KnowRe web development curriculum for noobs</h4>
+			<div class="repo-info">
+				<ul>
+					<span class="repo-count">44</span>
+					<li class="commits-count">commits</li>
+					<span class="repo-count">1</span>
+					<li class="branch-count">branch</li>
+					<span class="repo-count">0</span>
+					<li class="releases-count">releases</li>
+					<span class="repo-count">2</span>
+					<li class="contributors-count">contributors</li>
+					<span class="repo-count">mark</span>
+					<li class="liscense">MIT</li>
+				</ul>
+				<div class="repo-graph">
+					<div class="html-percentage"></div>
+					<div class="js-percentage"></div>
+					<div class="css-percentage"></div>
+				</div>
+			</div>
+			<div class="repo-feature">
+				<select class="branch-choice">
+					<option value="master">master</option>
+					<option value="dev">dev</option>
+				</select>
+				<button class="new-pull-request">New pull request</button>
+				<button class="create-new-file">Create new file</button>
+				<button class="upload-files">Upload files</button>
+				<button class="find-file">Find file</button>
+				<select class="clone-or-download">Clone or download
+					<option value="clone">Clone or download</option>
+					<option value="clone">clone</option>
+					<option value="download">download</option>
+				</select>
+			</div>
 		</section>
+		<section class="main-contents">
+			<main>
+				<table class="contents">
+					<th class="contents-header">
+						<div class="author">KnowRe</div>
+						<div class="commit-log">Quest 02 added constraint</div>
+						<div class="commit-header">Lastest commit
+							<span class="commit-header-span">8a3080e</span>
+						</div>
+						<div class="timestamp">on 7 Aug 2016</div>
+					</th>
+					<tr>
+						<td class="contents-name">Part 0. git/Quest 00. Hello, git</td>
+						<td class="commit-log">Part 2 finished</td>
+						<td class="commit-timestamp">2 years ago</td>
+					</tr>
+					<tr>
+						<td class="contents-name">Part 1. HTML & CSS</td>
+						<td class="commit-log">Quest 02 added constraint</td>
+						<td class="commit-timestamp">2 years ago</td>
+					</tr>
+					<tr>
+						<td class="contents-name">README.md</td>
+						<td class="commit-log">Fix: Removed advertisement</td>
+						<td class="commit-timestamp">2 years ago</td>
+					</tr>
+				</table>
+				<article class="file-contents">
+					<h5 class="file-name">README.md</h5>
+					<main class="file-detail">
+						KnowRe web development curriculum 2018
+					</main>
+				</article>
+			</main>
+		</section>
+	</section>
 
-		<footer>
-			<!-- TODO: 하단의 Copyright, Terms, Privacy 등은 어떻게 처리하면 좋을까요? -->
-		</footer>
-	</body>
+	<footer>
+		<!-- TODO: 하단의 Copyright, Terms, Privacy 등은 어떻게 처리하면 좋을까요? -->
+	</footer>
+</body>
+
 </html>
